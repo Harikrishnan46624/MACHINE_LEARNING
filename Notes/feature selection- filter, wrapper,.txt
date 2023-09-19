@@ -1,0 +1,8 @@
+feature selection:- filter, wrapper, embedded, hybrid
+feature engineering:- discretization, categorical encoding, feature splitting, imputing
+
+learn:-
+scaling
+creating features
+hadling outliers
+variable tranformation
