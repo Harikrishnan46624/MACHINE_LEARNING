@@ -12,9 +12,9 @@
 # unique_numbers = [x for x in numbers if numbers.count(x) == 1]
 # print(unique_numbers)
 
-# numbers = [1, 2, 3, 4, 3, 2, 1, 5, 6, 5, 7]
-# unique = []
-# for x in numbers:
-#     if numbers.count(x) == 1:
-#         unique.append(x)
-# print(unique)
+numbers = [1, 2, 3, 4, 3, 2, 1, 5, 6, 5, 7]
+unique = []
+for x in numbers:
+    if numbers.count(x) == 1:
+        unique.append(x)
+print(unique)
