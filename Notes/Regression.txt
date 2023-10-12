@@ -4,7 +4,7 @@ Uses
 Determining the strength of predictors 
 Forecasting an effect 
 Trend Forcasting
-anlyzing impact of price changes
+Anlyzing impact of price changes
 
 Linear Regression
 Linear Regression is a supervised machine learning algorithm used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation. It is appropriate when there is a linear relationship between the variables, and you want to make predictions or understand the strength and nature of the relationship.                                                         
@@ -16,7 +16,7 @@ best fit line-The best fit line is a line that has the least error which means t
 Residuals-difference between the observed value of the dependent variable(yi) and the predicted value(predicted) is 	called the residuals.
 
 Cost Function-The cost function helps to work out the optimal values for constant(c) and independent(m)
-		Mean Squared Error (MSE) cost function is used, which is the average of squared error that 			occurred between the ypredicted and yi.            MSE = (1/n) * Σ(actual - predicted)²
+		Mean Squared Error (MSE) cost function is used, which is the average of squared error that 			occurred between the actual and predicted.            MSE = (1/n) * Σ(actual - predicted)²
 
 Gradient Descent(batch gradient descent)-is one of the optimization algorithms that optimize the cost 		function(objective function) to reach the optimal minimal solution. To find the optimum solution we need to 	reduce the cost function(MSE) for all data points. This is done by updating the values 	of m and c 	iteratively until we get an optimal solution.	
 	∂MSE/∂βᵢ = (1/n) * Σ(actual - predicted) * (-Xᵢ)
@@ -33,7 +33,7 @@ Independence: the differences between the observed and predicted values of the d
 Homoscedasticity:The variance of the errors should be constant across all levels of the independent variables.
 		This means that the spread or dispersion of the residuals should be roughly the same for all values 		of the predictors
 
-Normality:The errors should be normally distributed. This assumption is not about the distribution of the 		independent variables but about the distribution of the residuals.
+Normality:The errors should be normally distributed of residuals. This assumption is not about the distribution of 	  the independent variables but about the distribution of the residuals.
 
 No or Little Multicollinearity: When multiple independent variables are included in the model, there should be 	little or no multicollinearity, which means that the independent variables should not be highly correlated 	with each other
 Hyperparameters:
@@ -83,9 +83,7 @@ Ridge Regression adds a regularization term (L2 penalty) to cost function, which
 
 L2-add a penalty equialent to the squre of the magnitude of coefficents
 
-penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is 		couraging the model from fitting large coefficients, which can lead to overfitting.
-	use case-Ridge Regression is a good choice when multicollinearity is present and you want to shrink 	coefficients without eliminating any predictors.
-		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
+penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is couraging the 	model from fitting large coefficients, which can lead to overfitting. use case-Ridge Regression is a good 	choice when multicollinearity is present and you want to shrink coefficients without eliminating any 	predictors.		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
 
 alpha - balance the amount of emphasis given to minimizing RSS vs minimizing sum of squre of coeficents 
 Hyperparameters:
@@ -108,7 +106,7 @@ Model Selection Challenge
 Decision Tree
 A Decision Tree is a tree-like model used for regression by recursively splitting the data into subsets based on the values of independent variables. It predicts the target variable by averaging the values of the target variable within each leaf node.
 
-Splitting: The most common criterion for splitting in regression trees is the reduction in Sum of Squred Error
+Splitting: The most common criterion for splitting in regression trees is the varience reduction in Sum of Squred Error
 
 Information gain-which tells us how much the parent entropy has decreased after splitting it with some feature.
 		Measures the reduction in entropy or impurity achieved by a split. A higher information gain 			suggests a better split.
@@ -129,7 +127,7 @@ Handles Non-Linear Relationships
 No Assumptions About Data
 Handles Mixed Data Types
 Feature Importance
-Efficient for Small to Medium-sized Datasets:
+Efficient for Small to Medium-sized Datasets
 
 Disadvantages:
 Overfitting
