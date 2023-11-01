@@ -1,0 +1,2 @@
+ML_project/book-recommender-system/Books.csv filter=lfs diff=lfs merge=lfs -text
+ML_project/book-recommender-system/Model/books.pkl filter=lfs diff=lfs merge=lfs -text
