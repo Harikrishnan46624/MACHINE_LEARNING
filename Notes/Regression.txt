@@ -36,11 +36,8 @@ Homoscedasticity:The variance of the errors should be constant across all levels
 Normality:The errors should be normally distributed of residuals. This assumption is not about the distribution of 	  the independent variables but about the distribution of the residuals.
 
 No or Little Multicollinearity: When multiple independent variables are included in the model, there should be 	little or no multicollinearity, which means that the independent variables should not be highly correlated 	with each other
-Hyperparameters:
-Fit Intercept
-Normalize
-Regularization
-R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by 		the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the 	better the model fits the data.	    R2 = 1 – ( RSS/TSS ) 
+
+R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by 		the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the 	better the model fits the data.	    R2 = 1 – ( RSS/TSS )
 Residual sum of Squares(RSS)-measure of the squred difference between the expected and the actual observed output.
 
 Total Sum of Squares (TSS)-the sum of errors of the data points from the mean of the response variable
@@ -65,6 +62,11 @@ Detection
 Correlation Matrix-by calculating the correlation matrix for the independent variables. High correlation 			coefficients (close to +1 or -1) indicate potential multicollinearity.
 Variance Inflation Factor (VIF)-VIF measures how much the variance of an estimated regression coefficient is 				increased because of multicollinearity. A high VIF (usually above 5 or 10) is indicative 			of multicollinearity.
 Pairwise Correlations: Checking the pairwise correlations between different pairs of independent variables 			can throw useful insights in detecting multicollinearity.
+Hyperparameters:
+Fit Intercept
+Normalize
+Regularization
+
 Advantages
 Simple implementation
 Performance on linearly seperable datasets
@@ -118,7 +120,7 @@ Hyperparameters:
 Max Depth (or Max Tree Depth)
 Min Samples Split
 Min Samples Leaf
-Max Leaf Nodes:
+Max Leaf Nodes
 Min Impurity Decrease
 
 Advantages:

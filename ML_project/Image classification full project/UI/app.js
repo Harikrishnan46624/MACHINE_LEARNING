@@ -82,12 +82,12 @@ function init() {
                     $(elementName).html(proabilityScore);
                 }
             }
-            // dz.removeFile(file);            
+            dz.removeFile(file);            
         });
     });
 
     $("#submitBtn").on('click', function (e) {
-        dz.processQueue();
+        dz.processQueue();		
     });
 }
 
