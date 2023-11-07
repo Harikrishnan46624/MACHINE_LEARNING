@@ -10,17 +10,17 @@ Linear Regression
 Linear Regression is a supervised machine learning algorithm used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation. It is appropriate when there is a linear relationship between the variables, and you want to make predictions or understand the strength and nature of the relationship.                                                         
 The goal is to find the best-fitting line that minimizes the difference between predicted and actual values.
 
-best fit line-The best fit line is a line that has the least error which means the error between predicted values 		and actual values should be minimum.
- 		best fit line is obtained by minimizing the Residual Sum of Squares(RSS).
+best fit line-The best fit line is a line that has the least error which means the error between predicted values and actual values should be minimum.
+ best fit line is obtained by minimizing the Residual Sum of Squares(RSS).
 
-Residuals-difference between the observed value of the dependent variable(yi) and the predicted value(predicted) is 	called the residuals.
+Residuals-difference between the observed value of the dependent variable(yi) and the predicted value(predicted) is called the residuals.
 
 Cost Function-The cost function helps to work out the optimal values for constant(c) and independent(m)
-		Mean Squared Error (MSE) cost function is used, which is the average of squared error that 			occurred between the actual and predicted.            MSE = (1/n) * Σ(actual - predicted)²
+Mean Squared Error (MSE) cost function is used, which is the average of squared error that occurred between the actual and predicted.            MSE = (1/n) * Σ(actual - predicted)²
 
-Gradient Descent(batch gradient descent)-is one of the optimization algorithms that optimize the cost 		function(objective function) to reach the optimal minimal solution. To find the optimum solution we need to 	reduce the cost function(MSE) for all data points. This is done by updating the values 	of m and c 	iteratively until we get an optimal solution.	
+Gradient Descent(batch gradient descent)-is one of the optimization algorithms that optimize the cost function(objective function) to reach the optimal minimal solution. To find the optimum solution we need to reduce the cost function(MSE) for all data points. This is done by updating the values of m and c iteratively until we get an optimal solution.	
 	∂MSE/∂βᵢ = (1/n) * Σ(actual - predicted) * (-Xᵢ)
-	reducing the cost function by randomly selecting coefficient values and then iteratively updating the 	values to reach the minimum cost function.
+reducing the cost function by randomly selecting coefficient values and then iteratively updating the values to reach the minimum cost function.
 
 Batch Gradient Descent-used to update the parameter weight and bias of a model in order to minimze a loss function
 
@@ -28,16 +28,15 @@ learning rate-In the gradient descent algorithm, the number of steps you’re ta
 Assumptions:
 Linearity: The relationship between the independent and dependent variables is linear.
 
-Independence: the differences between the observed and predicted values of the dependent variable, should be 			independent of each other.
+Independence: the differences between the observed and predicted values of the dependent variable, should be independent of each other.
 
-Homoscedasticity:The variance of the errors should be constant across all levels of the independent variables.
-		This means that the spread or dispersion of the residuals should be roughly the same for all values 		of the predictors
+Homoscedasticity:The variance of the errors should be constant across all levels of the independent variables.This means that the spread or dispersion of the residuals should be roughly the same for all values 	of the predictors
 
-Normality:The errors should be normally distributed of residuals. This assumption is not about the distribution of 	  the independent variables but about the distribution of the residuals.
+Normality:The errors should be normally distributed of residuals. This assumption is not about the distribution of the independent variables but about the distribution of the residuals.
 
-No or Little Multicollinearity: When multiple independent variables are included in the model, there should be 	little or no multicollinearity, which means that the independent variables should not be highly correlated 	with each other
+No or Little Multicollinearity: When multiple independent variables are included in the model, there should be little or no multicollinearity, which means that the independent variables should not be highly correlated with each other
 
-R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by 		the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the 	better the model fits the data.	    R2 = 1 – ( RSS/TSS )
+R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the better the model fits the data.	    R2 = 1 – ( RSS/TSS )
 Residual sum of Squares(RSS)-measure of the squred difference between the expected and the actual observed output.
 
 Total Sum of Squares (TSS)-the sum of errors of the data points from the mean of the response variable
@@ -52,16 +51,18 @@ T-Test-To test this hypothesis we use a t-test, test statistics for the beta coe
 
 t statistic: It is used to determine the p-value and hence, helps in determining whether the coefficient is 			significant or not
 
-F statistic: It is used to assess whether the overall model fit is significant or not. Generally, the higher the 		value of the F-	statistic, the more significant a model turns out to be.
+F statistic: It is used to assess whether the overall model fit is significant or not. Generally, the higher the value of the F-statistic, the more significant a model turns out to be.
 
 Multi linear Regression-relationship between a single dependent variable and multiple independent variables.
 
-Multicollinearity: It is the phenomenon where a model with several independent variables, may have some 		variables interrelated. the presence of high correlations between two or more independent variables
+Multicollinearity: It is the phenomenon where a model with several independent variables, may have some variables interrelated. the presence of high correlations between two or more independent variables
 	
 Detection
-Correlation Matrix-by calculating the correlation matrix for the independent variables. High correlation 			coefficients (close to +1 or -1) indicate potential multicollinearity.
-Variance Inflation Factor (VIF)-VIF measures how much the variance of an estimated regression coefficient is 				increased because of multicollinearity. A high VIF (usually above 5 or 10) is indicative 			of multicollinearity.
-Pairwise Correlations: Checking the pairwise correlations between different pairs of independent variables 			can throw useful insights in detecting multicollinearity.
+Correlation Matrix-by calculating the correlation matrix for the independent variables. High correlation coefficients (close to +1 or -1) indicate potential multicollinearity.
+
+Variance Inflation Factor (VIF)-VIF measures how much the variance of an estimated regression coefficient is increased because of multicollinearity. A high VIF (usually above 5 or 10) is indicative of multicollinearity.
+`
+Pairwise Correlations: Checking the pairwise correlations between different pairs of independent variables can throw useful insights in detecting multicollinearity.
 Hyperparameters:
 Fit Intercept
 Normalize
@@ -85,7 +86,7 @@ Ridge Regression adds a regularization term (L2 penalty) to cost function, which
 
 L2-add a penalty equialent to the squre of the magnitude of coefficents
 
-penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is couraging the 	model from fitting large coefficients, which can lead to overfitting. use case-Ridge Regression is a good 	choice when multicollinearity is present and you want to shrink coefficients without eliminating any 	predictors.		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
+penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is couraging the 	model from fitting large coefficients, which can lead to overfitting. use case-Ridge Regression is a good 	choice when multicollinearity is present and you want to shrink coefficients without eliminating any predictors.		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
 
 alpha - balance the amount of emphasis given to minimizing RSS vs minimizing sum of squre of coeficents 
 Hyperparameters:
@@ -110,8 +111,7 @@ A Decision Tree is a tree-like model used for regression by recursively splittin
 
 Splitting: The most common criterion for splitting in regression trees is the varience reduction in Sum of Squred Error
 
-Information gain-which tells us how much the parent entropy has decreased after splitting it with some feature.
-		Measures the reduction in entropy or impurity achieved by a split. A higher information gain 			suggests a better split.
+Information gain-which tells us how much the parent entropy has decreased after splitting it with some feature.Measures the reduction in entropy or impurity achieved by a split. A higher information gain suggests a better split.
 		It is just entropy of the full dataset – entropy of the dataset given some feature.
 
 Advantages include simplicity, interpretability, and ability to handle non-linear relationships.

@@ -1,0 +1,75 @@
+in unsupervised learning the machine learning algorithm learns from Unlabelled Data
+
+Clustring:
+Clustering is the task of dividing the unlabeled data or data points into different clusters such that similar data points fall in the same cluster than those which differ from the others. In simple words, the aim of the clustering process is to segregate groups with similar traits and assign them into clusters.
+
+Clustering is the process of dividing the entire data into groups (also known as clusters) based on the patterns in the data.
+
+Hard clustering - (datapoint belongs to only one group)
+Soft Clustering - (data points can belong to another group also)
+
+Partitioning clustering:
+It is a type of clustering that divides the data into non-hierarchical groups. It is also known as the centroid-based method. The most common example of partitioning clustering is the K-Means Clustering algorithm.
+
+Density-based clustering
+The density-based clustering method connects the highly-dense areas into clusters, and the arbitrarily shaped distributions are formed as long as the dense region can be connected.
+
+USES
+Image segmentation
+Customer segmentation
+Fraud detection
+Medical imaging
+Anomaly detection
+
+Silhouette Score
+The silhouette score and plot are used to evaluate the quality of a clustering solution prod*-/uced by the k-means algorithm. The silhouette score measures the similarity of each point to its own cluster compared to other clusters, and the silhouette plot visualizes these scores for each sample
+A high silhouette score indicates that the clusters are well separated
+
+Inertia - calculates the sum of distances of all the points within a cluster from the centroid of that cluster
+Dunn index - ratio of the minimum of inter-cluster distances and maximum of intracluster distances.
+
+K-Means
+K-means is a partitioning clustering algorithm that aims to group data points into K distinct clusters. It works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the data points in each cluster. This process continues until convergence.
+
+K-means clustering works by iteratively assigning data points to the cluster with the closest centroid. The centroid of a cluster is the average of all the data points in that cluster. The algorithm starts by initializing the centroids of the clusters randomly. Then, it assigns each data point to the cluster with the closest centroid. Once all data points have been assigned to clusters, the algorithm recalculates the centroids of the clusters. This process is repeated until the centroids no longer change.
+
+elbow method: Plotting the within-cluster sum of squares (WCSS) against different values of K and looking for an "elbow" point.
+
+Optimization(Cost Function)
+The goal of the optimization process is to find the best set of centroids that minimizes the sum of squared distances between each data point and its closest centroid. This process is repeated multiple times until convergence, resulting in the optimal clustering solution.
+
+Stopping Criteria for K-Means Clustering:
+Centroids of newly formed clusters do not change
+Points remain in the same cluster
+Maximum number of iterations is reached
+
+K-Means++:
+If the initialization of clusters is not appropriate, K-Means can result in arbitrarily bad clusters. This is where K-Means++ helps To initialize the cluster centers before moving forward with the standard k-means clustering algorithm
+
+Advantages
+Simple to understand and implement
+Fast and efficient
+Scalable to large datasets
+
+Disadvantages
+Sensitive to the choice of K
+Can get stuck in local optima
+Assumes that the data is spherical and that the clusters are well-separated
+
+DBSCAN Clustering
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm that groups data points based on their density and proximity to each other. It is a popular clustering algorithm in machine learning because it is robust to outliers and can identify clusters of arbitrary shapes.
+
+Parameters
+Epsilon is the radius of the circle
+minPoints is the minimum number of data points
+
+Advantages
+Robust to outliers.
+identify clusters of arbitrary shapes.
+Computationally efficient.
+Relatively easy to implement.
+
+Disadvantages
+sensitive to the choice of Eps and MinPts parameters.
+difficult to tune these parameters for optimal results.
+May not be suitable for datasets with high levels of noise.

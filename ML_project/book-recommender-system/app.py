@@ -48,3 +48,6 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
+from sklearn.svm import SVR
+
+SVR()

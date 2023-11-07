@@ -1,0 +1,62 @@
+Ensemble learning is a machine learning technique that combines the predictions from multiple models to create a more accurate and robust predictive model. It works by leveraging the diverse strengths of different models to mitigate errors and improve the overall performance of the learning system.
+
+Ensemble learning is a technique that combines multiple machine learning algorithms to produce one optimal predictive model with reduced variance (using bagging), bias (using boosting) and improved predictions (using stacking)
+
+Ensemble learning improves a model’s performance in mainly three ways:
+By reducing the variance of weak learners
+By reducing the bias of weak learners,
+By improving the overall accuracy of strong learners.
+
+BAGGING (Reducing Variance)
+Bagging, or Bootstrap Aggregating, is an ensemble learning technique in machine learning. It's commonly used to improve model performance, reduce variance, and enhance generalization by combining multiple base models
+
+We use bagging for combining weak learners of high variance. Bagging aims to produce a model with lower variance than the individual weak models. These weak learners are homogenous, meaning they are of the same type.
+Bagging is also known as Bootstrap aggregating. It consists of two steps: bootstrapping and aggregation.
+
+Bootstrap Sampling: 
+Bagging involves creating multiple subsets (samples) of the training data through a process called bootstrap sampling. In bootstrap sampling, you randomly select data points from the original training dataset with replacement. This means that some data points may be selected multiple times, while others may not be selected at all in a particular subset. These subsets are typically of the same size as the original dataset.
+
+Aggregation: 
+Once all the base models are trained, bagging aggregates their predictions to make a final prediction. The most common aggregation method is to take the Max Voting (in classification tasks) or the averageing (in regression tasks) of the individual model predictions.
+
+Max Voting
+It is a commonly used for classification problems that consists of taking the predictions of most occurring prediction. It is called voting because like in election voting, the premise is that ‘the majority rules’. Each model makes a prediction. A prediction from each model counts as a single ‘vote’. 
+
+Averaging
+It is generally used for regression problems. It involves taking the average of the predictions. The resulting average is used as the overall prediction for the combined model.
+
+Advantages
+Variance Reduction
+Overfitting Prevention
+Parallelization-Bagging is well-suited for parallelization, as each base model can be trained independently
+
+Bagging meta-estimator
+Bagging meta-estimator is an ensembling algorithm that can be used for both classification (BaggingClassifier) and regression (BaggingRegressor) problems
+
+Boosting (Reducing Bias)
+Boosting is an ensemble machine learning technique that combines multiple weak learners to produce a strong learner. Boosting algorithms work by iteratively training weak learners on different subsets of the training data, with each subsequent learner focusing on the instances that the previous learners misclassified. The final prediction of the boosted model is determined by a weighted average of the predictions of all the weak learners.
+
+We use boosting for combining weak learners with high bias. Boosting aims to produce a model with a lower bias than that of the individual models
+
+ALGORITHAMS
+AdaBoost - AdaBoost(Adaptive boosting) assigns different weights to weak learners and combines their predictions
+Gradient Boosting Machines(GBMs)
+Extreme Gradient Boosting (XGBoost)
+
+XGBoost, GBMs - uses gradient descent to minimize a loss function by adding weak learners sequentially
+
+Sequential Learning:
+The boosting process is an iterative one, where we train a series of weak models sequentially. The order in which these models are trained matters.
+
+Advantages
+High predictive accuracy
+Robustness to overfitting
+Interpretability
+
+Disadvantages
+Computational complexity
+Sensitivity to hyperparameters
+
+STACKING
+We use stacking to improve the prediction accuracy of strong learners. Stacking aims to create a single robust model from multiple heterogeneous strong learners
+
