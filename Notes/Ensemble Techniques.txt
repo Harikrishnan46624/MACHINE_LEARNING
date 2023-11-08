@@ -2,6 +2,9 @@ Ensemble learning is a machine learning technique that combines the predictions 
 
 Ensemble learning is a technique that combines multiple machine learning algorithms to produce one optimal predictive model with reduced variance (using bagging), bias (using boosting) and improved predictions (using stacking)
 
+Bias is the difference between the Predicted Value and the Expected Value
+varience - model learns too much from the training data well not perform in test data
+
 Ensemble learning improves a model’s performance in mainly three ways:
 By reducing the variance of weak learners
 By reducing the bias of weak learners,
@@ -30,6 +33,10 @@ Variance Reduction
 Overfitting Prevention
 Parallelization-Bagging is well-suited for parallelization, as each base model can be trained independently
 
+Disadvantages
+Can increase the computational cost of training a model, especially if the number of models in the ensemble is large.
+May not be as effective as other ensemble learning techniques, such as boosting, for some tasks.
+
 Bagging meta-estimator
 Bagging meta-estimator is an ensembling algorithm that can be used for both classification (BaggingClassifier) and regression (BaggingRegressor) problems
 
@@ -38,15 +45,17 @@ Boosting is an ensemble machine learning technique that combines multiple weak l
 
 We use boosting for combining weak learners with high bias. Boosting aims to produce a model with a lower bias than that of the individual models
 
-ALGORITHAMS
-AdaBoost - AdaBoost(Adaptive boosting) assigns different weights to weak learners and combines their predictions
-Gradient Boosting Machines(GBMs)
-Extreme Gradient Boosting (XGBoost)
-
-XGBoost, GBMs - uses gradient descent to minimize a loss function by adding weak learners sequentially
+Weighted averaging - After training the weak learner, the weights of the training examples are adjusted. Misclassified examples receive higher weights, while correctly classified examples receive lower weights.
 
 Sequential Learning:
 The boosting process is an iterative one, where we train a series of weak models sequentially. The order in which these models are trained matters.
+
+ALGORITHAMS
+AdaBoost (Adaptive Boosting): AdaBoost is a popular boosting algorithm that focuses on hard examples, instances that are misclassified repeatedly by the previous learners.
+
+Gradient Boosting Machines (GBMs): GBMs use decision trees as weak learners and focus on reducing the gradient of the loss function with each subsequent learner.
+
+Extreme Gradient Boosting (XGBoost): XGBoost is a variant of GBMs that incorporates additional features, such as shrinkage and regularization, to improve the performance and stability of the model.
 
 Advantages
 High predictive accuracy

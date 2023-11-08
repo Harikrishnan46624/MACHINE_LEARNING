@@ -22,7 +22,7 @@ Medical imaging
 Anomaly detection
 
 Silhouette Score
-The silhouette score and plot are used to evaluate the quality of a clustering solution prod*-/uced by the k-means algorithm. The silhouette score measures the similarity of each point to its own cluster compared to other clusters, and the silhouette plot visualizes these scores for each sample
+The silhouette score and plot are used to evaluate the quality of a clustering solution produced by the k-means algorithm. The silhouette score measures the similarity of each point to its own cluster compared to other clusters, and the silhouette plot visualizes these scores for each sample
 A high silhouette score indicates that the clusters are well separated
 
 Inertia - calculates the sum of distances of all the points within a cluster from the centroid of that cluster
