@@ -1,0 +1,48 @@
+Feature engineering is a crucial step in machine learning, is the process of extracting and organizing the important features from raw data in such a way that it fits the purpose of the machine learning model. It can be thought of as the art of selecting the important features and transforming them into refined and meaningful features that suit the needs of the model.
+
+Data Cleaning and Imputation
+Addressing missing values and inconsistencies in the data ensures that the information used for training the model is reliable and consistent.
+Handling Missing Values - mean, median, mode imputation
+Outlier Detection and Handling
+Handling Duplicate Data - Identify and remove duplicate records from the dataset
+Data Transformation -  log transformation or scaling
+Imputation
+Mean, Median, Mode Imputation:
+Forward and Backward Filling:
+K-Nearest Neighbors (KNN) Imputation:
+
+Feature Scaling: 
+Standardizing the range of numerical features ensures that all features contribute equally to the model’s training process, preventing any single feature from dominating the analysis.
+Min-Max Scaling (Normalization) - Scales the features to a fixed range, usually [0, 1]
+Standardization (Z-score normalization) - Scales the features of mean  0 and a standard deviation of 1
+Robust Scaling - interquartile range (IQR) to handle outliers
+
+Feature Encoding: 
+Categorical features, such as colors or names, need to be encoded into numerical values to be compatible with machine learning algorithms. Common techniques include one-hot encoding and label encoding.
+Label Encoding - Useful for ordinal data,Assigns a unique integer to each category
+One-Hot Encoding - Creates binary columns for each category, for nominal data
+Ordinal Encoding - Assigns numerical values to categories based on their order.
+Binary Encoding: Converts category integers into binary code, which is then split into separate columns.
+
+Feature Creation: 
+New features can be derived from existing ones, often by combining or transforming them. This can reveal hidden patterns and relationships that were not initially apparent.
+Polynomial Features - Generate polynomial features by raising existing features to higher powers.
+Binning/Discretization - Convert continuous features into discrete bins or categories.
+Interaction Features - Create new features by combining two or more existing features.
+
+Feature Selection: Selecting the most relevant and informative features can reduce the complexity of the model and improve its performance by eliminating irrelevant or redundant features.
+Filter Methods:
+  Variance Threshold:Remove features with low variance as they may contain less information., Useful for removing constant or near-constant features.
+   Correlation-based Methods: Identify and remove highly correlated features, Helps to reduce multicollinearity.
+Wrapper Methods:
+   Recursive Feature Elimination (RFE):Recursively removes features and evaluates model performance until the desired number of features is reached.
+Embedded Methods:
+  LASSO (L1 Regularization):
+  Tree-based Methods:
+Dimensionality Reduction Techniques:
+   Principal Component Analysis (PCA):
+SelectKBest:
+
+Feature Extraction: 
+Extracting features from raw data can involve techniques like dimensionality reduction, which reduces the number of features while preserving the most important information
+1. Principal Component Analysis (PCA):

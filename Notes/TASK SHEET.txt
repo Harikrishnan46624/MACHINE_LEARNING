@@ -1,0 +1,104 @@
+Week 8
+Linear Algebra :
+Linear Equations
+Matrices - Basics, Types, Transformations
+Addition, Subtraction, Multiplication
+Eigenvalues and Eigenvectors
+Vectors
+Vector Calculus :
+Univariate, Bivariate, Multivariate
+Learn about Gradients
+Statistics & Probability Concepts :
+Descriptive Statistics
+Variability
+Correlation
+Covariance
+Regression
+Bias / variance tradeoff
+Hypothesis testing
+Probability - Basics
+Discrete and Continuous Variables
+Probability Distribution and Types
+Central Limit Theorem
+Sampling, Random variables
+Range and Interquartile Range
+Skewness
+
+Week 9
+ML basics
+Types
+Why is ML used?
+ML workflow
+Classification, Regression, Clustering Concepts
+
+Week 10
+Refresh python basics, data structures etc.
+Learn jupyter notebook, virtual environment usages.
+Learn pandas, numpy and scikit learn usages.
+Learn plotting using matplotlib, seaborn.
+Create a venv and do all the concepts mentioned above using a jupyter notebook.
+Choose any 3 data sets and try out the concepts you studied.
+Prepare a reference document for the above concepts.
+Scikit Learn
+Implement Linear regression 
+Implement a sample classification
+Implement a clustering algorithm
+Evaluation metrics for each and with code and plots
+
+Week 11
+ Data Preprocessing 
+a. Learn Data Preprocessing and Exploratory Data Analysis (EDA) concepts b. Select any 3 dataset (other than previous) and do data preprocessing and EDA tasks. 
+c. Create a document which should list your opinion, insights of the data. 2. Git Concepts 
+a. Study git concepts. 
+b. Create a git account and push the code in your account. 
+3. Machine Learning Concepts: 
+a. Vectorization concepts 
+b. Performance concepts 
+c. Optimization concepts 
+
+Week 12
+Feature selection techniques in ML.
+Create a notebook feature selection techniques using python.
+Feature Engineering Techniques in ML
+Create a notebook with feature engineering techniques using python
+Classification
+Classification concepts
+Types of Classification
+Classification Algorithms:
+Implement Logistic Regression
+Implement Naive Bayes Classifier
+Implement K-Nearest Neighbors
+
+Week 13
+Classification Algorithms (Continuation):
+Implement Decision Tree
+Implement Random Forest
+Implement Support Vector Machine
+Evaluation Metrics for Classification
+Saving model
+Hyperparameter Tuning Techniques ( study any algorithms )
+
+Week 14
+Regression
+Regression Concepts
+Types of Regression
+Regression Algorithms:
+Linear Regression
+Implement Multiple Linear Regression
+Implement Decision Tree for Regression
+Implement  Ridge Regression
+
+Week 15
+Implement Lasso Regression
+Implement Polynomial Regression
+Implement Support Vector Regression 
+Implement Evaluation Metrics for Regression
+Clustering
+Clustering Concepts
+Clustering Types
+Clustering Algorithms:
+Implement K-means
+Implement DBSCAN
+Ensemble Techniques
+Boosting
+Bagging

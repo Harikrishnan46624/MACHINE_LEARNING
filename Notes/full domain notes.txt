@@ -1,0 +1,42 @@
+What is machine learning?
+A branch of artificial intelligence that provides algorithms enabling machines to learn patterns from historical data to then be able to make predictions on unseen data without being explicitly programmed.
+
+Features of Machine Learning:
+Machine learning uses data to detect various patterns in a given dataset.
+It can learn from past data and improve automatically.
+It is a data-driven technology.
+deals with the huge amount of the data
+
+Need for Machine Learning
+Rapid increment in the production of data
+Solving complex problems, which are difficult for a human
+Decision making in various sector including finance
+Finding hidden patterns and extracting useful information from data.
+
+Supervised Machine Learning:
+Supervised learning is a type of machine learning in which the algorithm is trained on the labeled dataset. It learns to map input features to targets based on labeled training data. In supervised learning, the algorithm is provided with input features and corresponding output
+
+Regression: Regression is a type of supervised learning where the algorithm learns to predict continuous values based on input features. The output labels in regression are continuous values, such as stock prices, and housing prices
+
+Classification: Classification is a type of supervised learning where the algorithm learns to assign input data to a specific category or class based on input features. The output labels in classification are discrete values. Classification algorithms can be binary, where the output is one of two possible classes, or multiclass, where the output can be one of several classes.
+
+Unsupervised Machine Learning:
+Unsupervised learning is a type of machine learning where the algorithm learns to recognize patterns in data without being explicitly trained using labeled examples. The goal of unsupervised learning is to discover the underlying structure or distribution in the data
+
+Clustering: Clustering algorithms group similar data points together based on their characteristics. The goal is to identify groups, or clusters, of data points that are similar to each other, while being distinct from other groups
+
+Association rule learning is a type of unsupervised machine learning technique that uses a rule-based approach to discover interesting relationships between features in a dataset
+
+Reinforcement Machine Learning
+Reinforcement learning is a type of machine learning where an agent learns to interact with an environment by performing actions and receiving rewards or penalties based on its actions. The goal of reinforcement learning is to learn a policy, which is a mapping from states to actions, that maximizes the expected cumulative reward over time.
+
+​
+Gradient descent is an optimization algorithm used to minimize the cost or loss function by iteratively adjusting model parameters in the direction of the steepest decrease in the function. It is a crucial step in training machine learning models
+
+​
+ 
+​
+
+​
+ 
+​

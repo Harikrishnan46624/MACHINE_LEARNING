@@ -36,23 +36,6 @@ Normality:The errors should be normally distributed of residuals. This assumptio
 
 No or Little Multicollinearity: When multiple independent variables are included in the model, there should be little or no multicollinearity, which means that the independent variables should not be highly correlated with each other
 
-R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the better the model fits the data.	    R2 = 1 – ( RSS/TSS )
-Residual sum of Squares(RSS)-measure of the squred difference between the expected and the actual observed output.
-
-Total Sum of Squares (TSS)-the sum of errors of the data points from the mean of the response variable
-
-Mean Squred Error-the average squred diffrence between the predicted and actual value
-		   MSE = (1/n) * Σ(actual - predicted)²
-Root Mean Squared Error-RMSE provides a measure of the average magnitude of errors in the same units as 			the target variable.		RMSE = √(MSE)
-		Lower RMSE indiactes better perfomance
-Mean Absloute Error-the average absloute diffrence between the predicted and actual value
-		     MAE = (1/n) * Σ|actual - predicted|
-T-Test-To test this hypothesis we use a t-test, test statistics for the beta coefficient
-
-t statistic: It is used to determine the p-value and hence, helps in determining whether the coefficient is 			significant or not
-
-F statistic: It is used to assess whether the overall model fit is significant or not. Generally, the higher the value of the F-statistic, the more significant a model turns out to be.
-
 Multi linear Regression-relationship between a single dependent variable and multiple independent variables.
 
 Multicollinearity: It is the phenomenon where a model with several independent variables, may have some variables interrelated. the presence of high correlations between two or more independent variables
@@ -61,7 +44,7 @@ Detection
 Correlation Matrix-by calculating the correlation matrix for the independent variables. High correlation coefficients (close to +1 or -1) indicate potential multicollinearity.
 
 Variance Inflation Factor (VIF)-VIF measures how much the variance of an estimated regression coefficient is increased because of multicollinearity. A high VIF (usually above 5 or 10) is indicative of multicollinearity.
-`
+
 Pairwise Correlations: Checking the pairwise correlations between different pairs of independent variables can throw useful insights in detecting multicollinearity.
 Hyperparameters:
 Fit Intercept
@@ -77,34 +60,6 @@ Disadvantages
 Prone to underfitting
 Sensitive to outliers
 Linear Regression assumes that the data is independent
-
-
-Ridge Regression:
-Ridge regression is a regularization technique used in linear regression to address the problem of multicollinearity (high correlation among predictor variables) and reduce overfitting in the model. It does this by adding a penalty term to the linear regression cost function, which encourages the model to have smaller and more balanced coefficient values
-
-Ridge Regression adds a regularization term (L2 penalty) to cost function, which encourages smaller coefficient values and helps prevent overfitting.
-
-L2-add a penalty equialent to the squre of the magnitude of coefficents
-
-penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is couraging the 	model from fitting large coefficients, which can lead to overfitting. use case-Ridge Regression is a good 	choice when multicollinearity is present and you want to shrink coefficients without eliminating any predictors.		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
-
-alpha - balance the amount of emphasis given to minimizing RSS vs minimizing sum of squre of coeficents 
-Hyperparameters:
-Alpha (or Lambda)
-Fit Intercept
-Normalize
-
-Advantages
-Handles Multicollinearity
-Prevents Overfitting
-Suitable for High-Dimensional Data
-Flexible Parameter Tuning
-
-Disadvantages
-Bias in Coefficient Estimates
-Complexity in Model Interpretation
-Assumption of Linearity
-Model Selection Challenge
 
 Decision Tree
 A Decision Tree is a tree-like model used for regression by recursively splitting the data into subsets based on the values of independent variables. It predicts the target variable by averaging the values of the target variable within each leaf node.
@@ -137,3 +92,131 @@ Instability
 Bias Towards Dominant Classes
 High Variance
 Greedy Nature
+
+Ridge Regression:
+Ridge regression is a regularization technique used in linear regression to address the problem of multicollinearity (high correlation among predictor variables) and reduce overfitting in the model. It does this by adding a penalty term to the linear regression cost function, which encourages the model to have smaller and more balanced coefficient values
+
+Ridge Regression adds a regularization term (L2 penalty) to cost function, which encourages smaller coefficient values and helps prevent overfitting.
+
+L2-add a penalty equialent to the squre of the magnitude of coefficents
+
+penalty-The L2 regularization penalty adds the sum of squared coefficients to the cost function is couraging the model from fitting large coefficients, which can lead to overfitting. use case-Ridge Regression is a good choice when multicollinearity is present and you want to shrink coefficients without eliminating any predictors.		
+		L2 - RSS(w) + alpha * (sum of squre of coefficents)²
+
+alpha - balance the amount of emphasis given to minimizing RSS vs minimizing sum of squre of coeficents 
+Hyperparameters:
+Alpha (or Lambda)
+Fit Intercept
+Normalize
+
+Advantages
+Handles Multicollinearity
+Prevents Overfitting
+Suitable for High-Dimensional Data
+Flexible Parameter Tuning
+
+Disadvantages
+Bias in Coefficient Estimates
+Complexity in Model Interpretation
+Assumption of Linearity
+Model Selection Challenge
+
+Lasso Regression:
+Lasso regression, also known as Least Absolute Shrinkage and Selection Operator, is a type of linear regression that uses L1 regularization to shrink the coefficients of less important features towards zero. This can help to reduce overfitting and improve the interpretability of the model
+
+This means that it can automatically select the most important features for prediction and shrink the coefficients of the less important features towards zero. This can help to improve the accuracy and interpretability of the model.
+
+use case - Lasso regression is  useful when you have a dataset with a large number of features
+		L2 = RSS(w) + alpha * (sum of the absolute value of coefficient)²
+Lasso Regression is useful for feature selection and dimensionality reduction. It can also be used to reduce overfitting and improve the interpretability of linear regression models.
+
+parameter
+Alpha (or Lambda)
+Fit Intercept
+Normalize  
+max iter 
+
+Advantages:
+Feature Selection
+Regularization
+Interpretability
+Suitable for High-Dimensional Data
+
+Disadvantages:
+Loss of Information: 
+Sensitive to Hyperparameter
+Not Ideal for All Data
+Computationally Intensive:
+
+Polynomial Regression:
+Polynomial regression is a type of machine learning algorithm used to model nonlinear relationships between independent and dependent variables. It is a generalization of linear regression, which can only model linear relationships
+Polynomial regression works by fitting a polynomial function to the data. The degree of the polynomial determines the complexity of the model. A higher degree polynomial will be able to model more complex relationships, but it will also be more prone to overfitting.
+	Cost function =  (1/n) * Σ(actual - predicted)2
+
+Gradient descent is a method of determining the values of a function’s parameters (coefficients) in order to minimize a cost function (cost). It may decrease the Cost function (minimizing MSE value) and achieve the best fit line.
+
+Types of Polynomial Regression
+Linear – if degree as 1
+Quadratic – if degree as 2
+Cubic – if degree as 3
+ 
+parameters:
+Degree
+include bias
+order
+intraction only
+
+Advantages
+Polynomial is a type of curve that can accommodate a wide variety of curvatures.
+Captures Nonlinear Relationships
+Flexible Modeling
+Simple to Implement
+Interpretability
+
+Disadvantages
+One or two outliers in the data might have a significant impact on the nonlinear analysis’ outcomes
+Overfitting
+Complexity
+Sensitive to Outliers
+Increased Variance
+
+Support vector regression (to handle non-linear relationships between input features and target values)
+SVR is a supervised machine learning algorithm used for regression tasks to handle non-linear relationships It works by finding a hyperplane in a high-dimensional space that best separates the data points. The hyperplane is then used to predict the output value for new input data points.
+
+we only take points that are within the decision boundary and have the least error rate, or are within the Margin of Tolerance. This gives us a better fitting model.
+
+Support Vector Regression (SVR) is a machine learning technique for predicting numeric values. It finds a hyperplane that best fits the data, allowing for non-linear relationships using kernel functions.
+
+kernel function
+A kernel function is chosen to transform the input data into a higher-dimensional space, making it easier to find a hyperplane that fits the data.to make the data more likely to be linearly separable in the high-dimensional space
+			linear, polynomial, and radial basis function (RBF)                                                                             
+
+Parameters
+C
+Epsilon
+gamma
+kernal
+shrinking
+max_iter
+
+Advantages of SVR:
+Robust to outliers
+Can handle both linear and non-linear regression problems
+Good generalization performance
+
+Disadvantages of SVR:
+Can be computationally expensive to train
+Hyperparameter tuning is important to achieve good performance
+
+Evaluation Metrices
+R-Squared (R2) - R-Squared is a number that explains the amount of variation that is explained/captured by the developed model. It always ranges between 0 & 1 . Overall, the higher the value of R-squared, the better the model fits the data.	    R2 = 1 – ( RSS/TSS )
+Residual sum of Squares(RSS)-measure of the squred difference between the expected and the actual observed output.
+
+Total Sum of Squares (TSS)-the sum of errors of the data points from the mean of the response variable
+
+Mean Squred Error-the average squred diffrence between the predicted and actual value
+		   MSE = (1/n) * Σ(actual - predicted)²
+Root Mean Squared Error-RMSE provides a measure of the average magnitude of errors in the same units as 			the target variable.		RMSE = √(MSE)
+		Lower RMSE indiactes better perfomance
+Mean Absloute Error-the average absloute diffrence between the predicted and actual value
+		     MAE = (1/n) * Σ|actual - predicted|

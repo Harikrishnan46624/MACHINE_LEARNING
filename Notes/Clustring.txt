@@ -8,15 +8,25 @@ Clustering is the process of dividing the entire data into groups (also known as
 Hard clustering - (datapoint belongs to only one group)
 Soft Clustering - (data points can belong to another group also)
 
-Partitioning clustering:
+Partitioning clustering:(centroid-based method)
 It is a type of clustering that divides the data into non-hierarchical groups. It is also known as the centroid-based method. The most common example of partitioning clustering is the K-Means Clustering algorithm.
 
 Density-based clustering
 The density-based clustering method connects the highly-dense areas into clusters, and the arbitrarily shaped distributions are formed as long as the dense region can be connected.
 
+Distribution Model-Based Clustering
+the data is divided based on the probability of how a dataset belongs to a particular distribution. The grouping is done by assuming some distributions commonly Gaussian Distribution.(Expectation-Maximization Clustering algorithm(GMM)
+
+Hierarchical Clustering
+Hierarchical clustering is a type of clustering algorithm that creates a hierarchy of clusters, starting with individual data points and merging them together until a single cluster remains. The result is a tree-like structure called a dendrogram, which shows the relationships between the clusters.  Agglomerative Hierarchical algorithm
+
+Fuzzy clustering
+Fuzzy clustering is a type of clustering algorithm that allows a data point to belong to more than one cluster with different degrees of membership. This is in contrast to traditional clustering algorithms, which assign each data point to a single cluster. Fuzzy clustering is useful for data sets where the clusters are not well-defined or where there are overlapping clusters.		 Fuzzy C-means algorithm
+
 USES
 Image segmentation
 Customer segmentation
+In Search Engines
 Fraud detection
 Medical imaging
 Anomaly detection
@@ -25,6 +35,7 @@ Silhouette Score
 The silhouette score and plot are used to evaluate the quality of a clustering solution produced by the k-means algorithm. The silhouette score measures the similarity of each point to its own cluster compared to other clusters, and the silhouette plot visualizes these scores for each sample
 A high silhouette score indicates that the clusters are well separated
 
+Cosine similarity measures the similarity between two vectors of an inner product space. 
 Inertia - calculates the sum of distances of all the points within a cluster from the centroid of that cluster
 Dunn index - ratio of the minimum of inter-cluster distances and maximum of intracluster distances.
 
@@ -32,8 +43,6 @@ K-Means
 K-means is a partitioning clustering algorithm that aims to group data points into K distinct clusters. It works by iteratively assigning data points to the nearest cluster centroid and updating the centroids based on the mean of the data points in each cluster. This process continues until convergence.
 
 K-means clustering works by iteratively assigning data points to the cluster with the closest centroid. The centroid of a cluster is the average of all the data points in that cluster. The algorithm starts by initializing the centroids of the clusters randomly. Then, it assigns each data point to the cluster with the closest centroid. Once all data points have been assigned to clusters, the algorithm recalculates the centroids of the clusters. This process is repeated until the centroids no longer change.
-
-elbow method: Plotting the within-cluster sum of squares (WCSS) against different values of K and looking for an "elbow" point.
 
 Optimization(Cost Function)
 The goal of the optimization process is to find the best set of centroids that minimizes the sum of squared distances between each data point and its closest centroid. This process is repeated multiple times until convergence, resulting in the optimal clustering solution.
@@ -45,6 +54,12 @@ Maximum number of iterations is reached
 
 K-Means++:
 If the initialization of clusters is not appropriate, K-Means can result in arbitrarily bad clusters. This is where K-Means++ helps To initialize the cluster centers before moving forward with the standard k-means clustering algorithm
+
+Parameter
+init
+n_cluster
+max_iter
+random_state
 
 Advantages
 Simple to understand and implement
@@ -60,8 +75,9 @@ DBSCAN Clustering
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm that groups data points based on their density and proximity to each other. It is a popular clustering algorithm in machine learning because it is robust to outliers and can identify clusters of arbitrary shapes.
 
 Parameters
-Epsilon is the radius of the circle
-minPoints is the minimum number of data points
+Epsilon -is the radius of the circle
+minPoints - is the minimum number of data points
+n_jobs
 
 Advantages
 Robust to outliers.

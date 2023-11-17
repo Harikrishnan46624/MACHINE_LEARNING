@@ -4,6 +4,7 @@ Ensemble learning is a technique that combines multiple machine learning algorit
 
 Bias is the difference between the Predicted Value and the Expected Value
 varience - model learns too much from the training data well not perform in test data
+Weak learners are machine learning algorithms that perform poorly,
 
 Ensemble learning improves a model’s performance in mainly three ways:
 By reducing the variance of weak learners
@@ -51,11 +52,11 @@ Sequential Learning:
 The boosting process is an iterative one, where we train a series of weak models sequentially. The order in which these models are trained matters.
 
 ALGORITHAMS
-AdaBoost (Adaptive Boosting): AdaBoost is a popular boosting algorithm that focuses on hard examples, instances that are misclassified repeatedly by the previous learners.
+AdaBoost (Adaptive Boosting):AdaBoost is a popular boosting algorithm that focuses on hard examples, instances that are misclassified repeatedly by the previous learners.
 
-Gradient Boosting Machines (GBMs): GBMs use decision trees as weak learners and focus on reducing the gradient of the loss function with each subsequent learner.
+Gradient Boosting Machines (GBMs):GBMs use decision trees as weak learners and focus on reducing the gradient of the loss function with each subsequent learner.
 
-Extreme Gradient Boosting (XGBoost): XGBoost is a variant of GBMs that incorporates additional features, such as shrinkage and regularization, to improve the performance and stability of the model.
+Extreme Gradient Boosting (XGBoost):XGBoost is a variant of GBMs that incorporates additional features, such as shrinkage and regularization, to improve the performance and stability of the model.
 
 Advantages
 High predictive accuracy
@@ -68,4 +69,3 @@ Sensitivity to hyperparameters
 
 STACKING
 We use stacking to improve the prediction accuracy of strong learners. Stacking aims to create a single robust model from multiple heterogeneous strong learners
-
