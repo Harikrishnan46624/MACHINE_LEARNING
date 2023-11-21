@@ -1,3 +1,12 @@
+chatgpt - https://chat.openai.com/c/d054911a-d49b-4382-904b-987f4fa23dae
+
+Step 1: Data Collection and Understanding
+Step 2: Data Cleaning and Handling Missing Values
+Step 3: Data Encoding and Feature Engineering
+Step 4: Data Feature Selection and Dimensionality Reduction
+Step 5: Data Sampling and splitting
+Step 6: Data Visualization and Documentation
+
 Data preprocessing is a crucial step in machine learning, as it prepares the raw data for effective modeling and analysis. The process involves cleaning, transforming, and organizing the data to make it suitable for the chosen machine learning algorithm
 
 
@@ -59,7 +68,7 @@ Data Sampling:
 
 Address imbalanced datasets by oversampling or undersampling minority classes.
 Ensure fair representation of all classes for effective model training.
-Data Partitioning:
+Data Splitting:
 
 Divide the data into training, validation, and testing sets.
 Use the training set to build the model, the validation set to tune hyperparameters, and the testing set to evaluate the final model's performance.

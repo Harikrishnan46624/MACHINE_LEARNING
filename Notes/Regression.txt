@@ -180,7 +180,8 @@ Complexity
 Sensitive to Outliers
 Increased Variance
 
-Support vector regression (to handle non-linear relationships between input features and target values)
+Support vector regression 
+(to handle non-linear relationships between input features and target values)
 SVR is a supervised machine learning algorithm used for regression tasks to handle non-linear relationships It works by finding a hyperplane in a high-dimensional space that best separates the data points. The hyperplane is then used to predict the output value for new input data points.
 
 we only take points that are within the decision boundary and have the least error rate, or are within the Margin of Tolerance. This gives us a better fitting model.

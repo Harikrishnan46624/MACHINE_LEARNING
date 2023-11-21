@@ -1,3 +1,12 @@
+chatgpt - https://chat.openai.com/c/db256755-de62-4b43-a658-90fe1ad4608f
+
+Data Cleaning and Imputation
+Feature Scaling: 
+Feature Encoding: 
+Feature Creation: 
+Feature Selection
+Feature Extraction: 
+
 Feature engineering is a crucial step in machine learning, is the process of extracting and organizing the important features from raw data in such a way that it fits the purpose of the machine learning model. It can be thought of as the art of selecting the important features and transforming them into refined and meaningful features that suit the needs of the model.
 
 Data Cleaning and Imputation
@@ -30,7 +39,8 @@ Polynomial Features - Generate polynomial features by raising existing features 
 Binning/Discretization - Convert continuous features into discrete bins or categories.
 Interaction Features - Create new features by combining two or more existing features.
 
-Feature Selection: Selecting the most relevant and informative features can reduce the complexity of the model and improve its performance by eliminating irrelevant or redundant features.
+Feature Selection: 
+Selecting the most relevant and informative features can reduce the complexity of the model and improve its performance by eliminating irrelevant or redundant features.
 Filter Methods:
   Variance Threshold:Remove features with low variance as they may contain less information., Useful for removing constant or near-constant features.
    Correlation-based Methods: Identify and remove highly correlated features, Helps to reduce multicollinearity.

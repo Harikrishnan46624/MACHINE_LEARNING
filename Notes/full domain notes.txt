@@ -1,10 +1,12 @@
+ml workflow - https://chat.openai.com/c/6b2c91d7-23b4-4ed4-a19a-cf38b68847ea
+
 What is machine learning?
-A branch of artificial intelligence that provides algorithms enabling machines to learn patterns from historical data to then be able to make predictions on unseen data without being explicitly programmed.
+machine learning is a branch of artificial intelligence that provides algorithms enabling machines to learn patterns from historical data to then be able to make predictions on unseen data without being explicitly programmed.
 
 Features of Machine Learning:
 Machine learning uses data to detect various patterns in a given dataset.
 It can learn from past data and improve automatically.
-It is a data-driven technology.
+It is a data-driven technology. (making decisions based on the analysis and interpretation)
 deals with the huge amount of the data
 
 Need for Machine Learning
@@ -16,12 +18,12 @@ Finding hidden patterns and extracting useful information from data.
 Supervised Machine Learning:
 Supervised learning is a type of machine learning in which the algorithm is trained on the labeled dataset. It learns to map input features to targets based on labeled training data. In supervised learning, the algorithm is provided with input features and corresponding output
 
-Regression: Regression is a type of supervised learning where the algorithm learns to predict continuous values based on input features. The output labels in regression are continuous values, such as stock prices, and housing prices
+Regression: Regression is a type of supervised learning algorithms used if there is a relationship between the input variable and the output variable. It is used for the prediction of continuous variables, such as stock prices, and housing prices
 
-Classification: Classification is a type of supervised learning where the algorithm learns to assign input data to a specific category or class based on input features. The output labels in classification are discrete values. Classification algorithms can be binary, where the output is one of two possible classes, or multiclass, where the output can be one of several classes.
+Classification: Classification is a type of supervised learning where the algorithm used when the output variable is categorical, which means there are two classes such as Yes-No, Male-Female, True-false
 
-Unsupervised Machine Learning:
-Unsupervised learning is a type of machine learning where the algorithm learns to recognize patterns in data without being explicitly trained using labeled examples. The goal of unsupervised learning is to discover the underlying structure or distribution in the data
+Unsupervised  Learning:
+Unsupervised learning is a type of machine learning in which models are trained using unlabeled dataset and are allowed to act on that data without any supervision.find the underlying structure of dataset, group that data according to similarities, and represent that dataset
 
 Clustering: Clustering algorithms group similar data points together based on their characteristics. The goal is to identify groups, or clusters, of data points that are similar to each other, while being distinct from other groups
 
@@ -30,13 +32,26 @@ Association rule learning is a type of unsupervised machine learning technique t
 Reinforcement Machine Learning
 Reinforcement learning is a type of machine learning where an agent learns to interact with an environment by performing actions and receiving rewards or penalties based on its actions. The goal of reinforcement learning is to learn a policy, which is a mapping from states to actions, that maximizes the expected cumulative reward over time.
 
+Semi-supervised learning (SSL) is a machine learning technique that uses a small amount of labeled data and a large amount of unlabeled data to train a predictive model.
 ​
 Gradient descent is an optimization algorithm used to minimize the cost or loss function by iteratively adjusting model parameters in the direction of the steepest decrease in the function. It is a crucial step in training machine learning models
 
-​
+cost function is an important parameter that determines how well a machine learning model performs for a given dataset. It calculates the difference between the expected value and predicted value and represents it as a single real number
+
+​Numpy - numerical operations , support large multi dimensional arrays and metrices
+pandas - build top of numpy and provides data structures (Data Frames)for efficent data manipulation and anlaysis
  
-​
+​Grid Search: Grid search involves defining a grid of possible hyperparameter values and exhaustively trying all combinations. It's a straightforward approach, but it can be computationally expensive, especially when dealing with multiple hyperparameters or a large search space.
+
+Random Search: Random search selects random combinations of hyperparameter values within predefined ranges. While it may not cover all possible combinations like grid search, it has been shown to be more efficient in terms of finding good combinations quickly.
+
+GridSearchCV: GridSearchCV performs an exhaustive search over all possible combinations of hyperparameters within a predefined grid
+RandomizedSearchCV:randomly samples a specified number of combinations from the hyperparameter space. It does not explore all combinations but rather focuses on a random subset.
 
 ​
- 
+Vectorization is a crucial concept in machine learning that involves performing operations on entire arrays or matrices of data at once, rather than looping through individual elements. It's an efficient way to handle mathematical operations and transformations in machine learning algorithms
 ​
+Optimization in machine learning refers to the process of adjusting the parameters of a model to minimize or maximize a certain function, typically to reduce errors or improve performance. It's a fundamental aspect of training models, and there are several optimization techniques used to achieve this.
+
+Performance in machine learning refers to how well a model accomplishes the task it's designed for. It's evaluated based on various metrics, depending on the type of problem being solved. Performance metrics are crucial for assessing how effectively a model has learned patterns in the data and how well it can generalize to new, unseen data.
+

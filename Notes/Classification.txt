@@ -49,7 +49,7 @@ Types-Classification tree, Regression tree, Cost-complexity pruning tree, and Re
 Tree algorithm-ID3, C4.5, CART, and Random Forest
 The goal of machine learning is to decrease uncertainty or disorders from the dataset and for this, we use decision trees.
 Entropy-the uncertainty in our dataset or measure of disorder.choose low entropy
-Always remember that the higher the Entropy, the lower will be the purity and the higher will be the impurity.
+the higher the Entropy, the lower will be the purity and the higher will be the impurity.
 
 Gini impurity measures the probability of misclassifying a randomly chosen element, while entropy measures the 	amount of disorder or randomness in a datase
 
@@ -133,9 +133,4 @@ AUC :is a measure of a model's overall performance on the ROC curve. A higher AU
 
 ROC: reciver operator curve that plots the true postive rate against false postive rate
 
-Grid Search: Grid search involves defining a grid of possible hyperparameter values and exhaustively trying all combinations. It's a straightforward approach, but it can be computationally expensive, especially when dealing with multiple hyperparameters or a large search space.
-
-Random Search: Random search selects random combinations of hyperparameter values within predefined ranges. While it may not cover all possible combinations like grid search, it has been shown to be more efficient in terms of finding good combinations quickly.
-
-GridSearchCV: GridSearchCV performs an exhaustive search over all possible combinations of hyperparameters within a predefined grid
-RandomizedSearchCV: RandomizedSearchCV, on the other hand, randomly samples a specified number of combinations from the hyperparameter space. It does not explore all combinations but rather focuses on a random subset. 
+ 

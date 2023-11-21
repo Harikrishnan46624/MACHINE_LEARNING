@@ -2,8 +2,8 @@ Ensemble learning is a machine learning technique that combines the predictions 
 
 Ensemble learning is a technique that combines multiple machine learning algorithms to produce one optimal predictive model with reduced variance (using bagging), bias (using boosting) and improved predictions (using stacking)
 
-Bias is the difference between the Predicted Value and the Expected Value
-varience - model learns too much from the training data well not perform in test data
+high Bias is the difference between the Predicted Value and the Expected Value(underfitting)
+high varience - model learns too much from the training data well not perform in test data(overfitting)
 Weak learners are machine learning algorithms that perform poorly,
 
 Ensemble learning improves a model’s performance in mainly three ways:
