@@ -55,7 +55,9 @@ Maximum number of iterations is reached
 K-Means++:
 If the initialization of clusters is not appropriate, K-Means can result in arbitrarily bad clusters. This is where K-Means++ helps To initialize the cluster centers before moving forward with the standard k-means clustering algorithm
 
+elbow method is a graphical method for finding the optimal K value in a k-means clustering algorithm
 Parameter
+
 init
 n_cluster
 max_iter
